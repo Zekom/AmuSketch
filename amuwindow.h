@@ -19,7 +19,7 @@ protected:
 private slots:
     void openRecentProject();
     void updateStatusBar();
-    void windowModified();
+    void somethingModified();
 
     void on_actionNew_triggered();
 
@@ -27,6 +27,7 @@ private slots:
 
 private:
     void createActions();
+    void createContextMenu();
 
     void writeSettings();
     void readSettings();

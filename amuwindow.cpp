@@ -24,7 +24,6 @@ void AmuWindow::closeEvent(QCloseEvent *event)
         writeSettings();
     else
         event->ignore();
-
 }
 
 void AmuWindow::createActions()
@@ -58,9 +57,9 @@ void AmuWindow::updateStatusBar()
 
 }
 
-void AmuWindow::windowModified()
+void AmuWindow::somethingModified()
 {
-
+    setWindowModified(true);
 }
 
 bool AmuWindow::saveToClose()
